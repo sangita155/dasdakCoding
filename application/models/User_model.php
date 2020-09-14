@@ -103,4 +103,28 @@ class User_model extends CI_Model {
 			
 		}
 	}
+	public function get_count() 
+	{
+        return $this->db->count_all("user");
+    }
+
+
+	public function get_user($limit, $start) 
+	{
+		$this->db->limit($limit, $start);
+		$this->db->select('*');
+		$this->db->from('user');
+		$query = $this->db->get();
+	   
+		$data['count'] = $query->num_rows();
+		if($data>0)
+		{
+			$data['results'] = $query->result();
+			return $data;
+
+		}else
+		{
+			return false;
+		}
+    }
 }

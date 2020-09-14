@@ -19752,5 +19752,13 @@ Copyright (c) 2015 Daniel Eden
     display: none !important;
   }
 }
+.my-custom-scrollbar {
+  position: relative;
+  height: 200px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
 
 /*# sourceMappingURL=dashboard-free.css.map */

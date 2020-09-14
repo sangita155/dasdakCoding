@@ -9,7 +9,7 @@
                     <i class="material-icons">person</i>
                   </div>
                   <p class="card-category">Customer</p>
-                  <h4 class="card-title"> 2
+                  <h4 class="card-title"><?php echo $this->db->count_all_results('user'); ?>
                   </h4>
                 </div>
                 <div class="card-footer">

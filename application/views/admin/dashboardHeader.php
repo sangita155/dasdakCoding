@@ -17,6 +17,16 @@
   <link href="<?php echo base_url();?>assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="<?php echo base_url();?>assets/demo/demo.css" rel="stylesheet" />
+  <style>
+  .my-custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+  </style>
 </head>
 
 <body class="">

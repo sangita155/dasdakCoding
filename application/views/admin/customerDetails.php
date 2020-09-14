@@ -1,4 +1,13 @@
-
+<style>
+  .my-custom-scrollbar {
+position: relative;
+height: 150px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+  </style>
 <?php include('dashboardHeader.php'); ?>
       <!-- End Navbar -->
       <div class="content">
@@ -79,8 +88,8 @@
                   <h4 class="card-title ">Customer Guest Information</h4>
                 </div>
                 <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
+                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                 <table class="table table-bordered table-striped mb-0">
                       <thead class=" text-primary">
                         <th>
                           ID
